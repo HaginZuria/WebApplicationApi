@@ -86,8 +86,6 @@ namespace WebApplicationApi.Controllers
                 usuario.password = null;
                 return Ok(usuario);
             }
-
-
         }
 
         // POST: api/Usuarios
