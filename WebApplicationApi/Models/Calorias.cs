@@ -7,8 +7,8 @@ namespace WebApplicationApi.Models
     using System.Data.Entity.Spatial;
     using System.Runtime.Serialization;
 
-    [KnownType(typeof(Usuarios))]
-    [KnownType(typeof(Alimentos))]
+    //[KnownType(typeof(Usuarios))]
+    //[KnownType(typeof(Alimentos))]
     public partial class Calorias
     {
         [Key]
@@ -33,8 +33,9 @@ namespace WebApplicationApi.Models
 
         public int? cantidad { get; set; }
 
-        public Alimentos Alimentos { get; set; }
+        [ForeignKey("codigoAlimento")]
+        public virtual Alimentos Alimentos { get; set; }
 
-        public Usuarios Usuarios { get; set; }
+        public virtual Usuarios Usuarios { get; set; }
     }
 }
