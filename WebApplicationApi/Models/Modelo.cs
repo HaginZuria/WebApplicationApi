@@ -16,9 +16,9 @@ namespace WebApplicationApi.Models
         {
         }
 
-        public DbSet<Alimentos> Alimentos { get; set; }
+        public virtual DbSet<Alimentos> Alimentos { get; set; }
         public DbSet<Calorias> Calorias { get; set; }
-        public DbSet<Usuarios> Usuarios { get; set; }
+        public virtual DbSet<Usuarios> Usuarios { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -27,7 +27,7 @@ namespace WebApplicationApi.Models
                 .IsUnicode(false);
 
             //modelBuilder.Entity<Alimentos>()
-            //    .HasMany(e => e.Calorias1)
+            //    .HasMany(e => e.Calorias)
             //    .WithRequired(e => e.Alimentos)
             //    .HasForeignKey(e => e.codigoAlimento)
             //    .WillCascadeOnDelete(false);
@@ -53,8 +53,7 @@ namespace WebApplicationApi.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Usuarios>()
-                .Property(e => e.foto)
-                .IsUnicode(false);
+                .Property(e => e.foto);
 
             //modelBuilder.Entity<Usuarios>()
             //    .HasMany(e => e.Calorias)

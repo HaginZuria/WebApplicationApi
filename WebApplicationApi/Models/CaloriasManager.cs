@@ -8,11 +8,11 @@ using WebApplicationApi.Models;
 namespace WebApplicationApi.Controllers
 {
     public class CaloriasManager
-    {
+    {/*
         private static string cadenaConexion =
-             @"Server=HAGINZURIA;Initial Catalog=BDNutricion;Integrated Security=True";
-        private static string tabla = "Calorias";
-
+             @"Server=LAPTOP-V8VFEUF2;Initial Catalog=BDNutricion;Integrated Security=True";
+        private static string tabla = "Calorias";*/
+        /*
         public bool InsertarCalorias(Calorias cal)
         {
             SqlConnection con = new SqlConnection(cadenaConexion);
@@ -34,8 +34,8 @@ namespace WebApplicationApi.Controllers
             con.Close();
 
             return (res == 1);
-        }
-
+        }*/
+        /*
         public bool ActualizarCalorias(Calorias cal)
         {
             SqlConnection con = new SqlConnection(cadenaConexion);
@@ -58,6 +58,6 @@ namespace WebApplicationApi.Controllers
 
             return (res == 1);
         }
-        
+        */
     }
 }
