@@ -53,7 +53,8 @@ namespace WebApplicationApi.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Usuarios>()
-                .Property(e => e.foto);
+                .Property(e => e.foto)
+                .IsUnicode(false);
 
             //modelBuilder.Entity<Usuarios>()
             //    .HasMany(e => e.Calorias)
