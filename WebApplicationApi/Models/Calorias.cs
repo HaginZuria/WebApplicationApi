@@ -28,7 +28,7 @@ namespace WebApplicationApi.Models
 
         [Key]
         [Column(Order = 3)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int codigoAlimento { get; set; }
 
         public int? cantidad { get; set; }

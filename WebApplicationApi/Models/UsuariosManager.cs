@@ -10,7 +10,7 @@ namespace WebApplicationApi.Controllers
     public class UsuariosManager
     {
         private static string cadenaConexion =
-            @"Server=HAGINZURIA;Initial Catalog=BDNutricion;Integrated Security=True";
+            @"Server=LAPTOP-V8VFEUF2;Initial Catalog=BDNutricion;Integrated Security=True";
 
         public Usuarios ObtenerUsuario(string email)
         {
