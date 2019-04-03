@@ -31,6 +31,12 @@ namespace WebApplicationApi
             routeTemplate: "api/{controller}/{action}/{email}/{password}",
             defaults: null
             );
+
+            config.Routes.MapHttpRoute(
+            name: "obtenerAlimento",
+            routeTemplate: "api/{controller}/{action}",
+            defaults: null
+            );
         }
     }
 }

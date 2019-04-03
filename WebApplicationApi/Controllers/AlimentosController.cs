@@ -71,6 +71,25 @@ namespace WebApplicationApi.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
+        //[HttpGet]
+        //[ResponseType(typeof(Alimentos))]
+        //[Route("api/alimentos/obtenerAlimento")]
+        //public IHttpActionResult GetobtenerAlimento(string email, string password)
+        //{
+        //    Alimentos alimento = db.Alimentos.Where(x => x.email == email && x.password == password).FirstOrDefault();
+        //    if (alimento == null)
+        //    {
+        //        return BadRequest();
+        //    }
+        //    else
+        //    {
+        //        alimento.password = null;
+        //        return Ok(alimento);
+        //    }
+
+
+        //}
+
         // POST: api/Alimentos
         [ResponseType(typeof(Alimentos))]
         public async Task<IHttpActionResult> PostAlimentos(Alimentos alimentos)
