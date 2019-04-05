@@ -198,11 +198,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Alimentos.cs" />
-    <Compile Include="Models\AlimentosManager.cs" />
     <Compile Include="Models\Calorias.cs" />
-    <Compile Include="Models\CaloriasManager.cs" />
     <Compile Include="Models\Modelo.cs" />
-    <Compile Include="Models\UsuariosManager.cs" />
     <Compile Include="Models\Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
